@@ -1,5 +1,4 @@
-use std::fmt::Display;
-use std::fmt;
+use std::fmt::{self, Display};
 fn main() {}
 
 struct Swagger<T: Display> {
