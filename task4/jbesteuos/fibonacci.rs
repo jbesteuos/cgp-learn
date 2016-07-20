@@ -8,8 +8,8 @@ fn main() {
 }
 
 struct Fibo {
-    first: i32,
-    sec: i32,
+    first: u32,
+    sec: u32,
 }
 
 impl Fibo {
@@ -19,7 +19,7 @@ impl Fibo {
 }
 
 impl Iterator for Fibo {
-    type Item = i32;
+    type Item = u32;
     fn next(&mut self) -> Option<Self::Item> {
         let dx = self.first + self.sec;
         self.sec = self.first;
